@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="vTiTeOfGvWgOrdcQ4ojc">
+    <mxGraphModel dx="1348" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WES5C_CrsTrxgOW_GC2z-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="编解码路径" vertex="1">
+          <mxGeometry height="30" width="340" x="30" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WES5C_CrsTrxgOW_GC2z-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="显示路径" vertex="1">
+          <mxGeometry height="30" width="340" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WES5C_CrsTrxgOW_GC2z-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="mp4 / mkv / .... 格式" vertex="1">
+          <mxGeometry height="30" width="160" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="WES5C_CrsTrxgOW_GC2z-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="h264 / h265 / h266 / av1 / ... 编码格式" vertex="1">
+          <mxGeometry height="60" width="240" x="40" y="180" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
