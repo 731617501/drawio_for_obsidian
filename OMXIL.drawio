@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="cekRBeUw2PlTGE5yeWGd">
-    <mxGraphModel dx="2175" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3074" dy="1325" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,16 +8,62 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Jetmap Mono;" value="FillThisBuffer( )" vertex="1">
-          <mxGeometry height="50" width="160" x="-720" y="110" as="geometry" />
+          <mxGeometry height="50" width="160" x="-20" y="50" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Jetmap Mono;" value="SendCommond( )" vertex="1">
           <mxGeometry height="50" width="160" x="-250" y="110" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Rockchip_OSAL_Queue( &amp;amp;bufferQ, message )" vertex="1">
-          <mxGeometry height="50" width="310" x="-718" y="260" as="geometry" />
+          <mxGeometry height="50" width="310" x="-20" y="140" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Rockchip_OSAL_Queue( &amp;amp;bufferQ, message )" vertex="1">
           <mxGeometry height="50" width="310" x="-250" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=25;" value="component" vertex="1">
+          <mxGeometry height="130" width="245" x="-39" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="70" width="30" x="-59" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="70" width="30" x="191" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;InputPort&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="-79" y="699" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;OutPort&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="191" y="699" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-7" edge="1" parent="1" source="jsTGk4NQo20okIAUbT8I-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="jsTGk4NQo20okIAUbT8I-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-150.02999999999997" y="635.03" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="EmptyThisBuffer( )" vertex="1">
+          <mxGeometry height="40" width="120" x="-210" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Jetmap Mono;" value="FillThisBuffer( )" vertex="1">
+          <mxGeometry height="40" width="140" x="81" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="OMX_Init( )" vertex="1">
+          <mxGeometry height="40" width="120" x="-785" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="OMX_GetHadnle( handle, &quot;OMX.component.name&quot;, NULL, &amp;amp;callback_func)" vertex="1">
+          <mxGeometry height="40" width="455" x="-785" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="OMX_SendCommond( )&amp;nbsp;" vertex="1">
+          <mxGeometry height="40" width="265" x="-785" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-12" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="OMX_UseBuffer( )" vertex="1">
+          <mxGeometry height="40" width="375" x="-785" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="OMX_SendCommond( )&amp;nbsp;" vertex="1">
+          <mxGeometry height="40" width="255" x="-785" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Jetmap Mono;" value="FillThisBuffer( )" vertex="1">
+          <mxGeometry height="40" width="140" x="-785" y="390" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
