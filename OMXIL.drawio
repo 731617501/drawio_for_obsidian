@@ -1,0 +1,25 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="cekRBeUw2PlTGE5yeWGd">
+    <mxGraphModel dx="2175" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="otk-fOiWdATp6TJRK-WU-5" edge="1" parent="1" source="otk-fOiWdATp6TJRK-WU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="otk-fOiWdATp6TJRK-WU-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="otk-fOiWdATp6TJRK-WU-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Jetmap Mono;" value="FillThisBuffer( )" vertex="1">
+          <mxGeometry height="50" width="160" x="-720" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="otk-fOiWdATp6TJRK-WU-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Jetmap Mono;" value="SendCommond( )" vertex="1">
+          <mxGeometry height="50" width="160" x="-250" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="otk-fOiWdATp6TJRK-WU-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Rockchip_OSAL_Queue( &amp;amp;bufferQ, message )" vertex="1">
+          <mxGeometry height="50" width="310" x="-718" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="otk-fOiWdATp6TJRK-WU-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Rockchip_OSAL_Queue( &amp;amp;bufferQ, message )" vertex="1">
+          <mxGeometry height="50" width="310" x="-250" y="260" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
