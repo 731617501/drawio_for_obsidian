@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="cekRBeUw2PlTGE5yeWGd">
-    <mxGraphModel dx="3074" dy="1325" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2413" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,7 +31,7 @@
         <mxCell id="jsTGk4NQo20okIAUbT8I-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;InputPort&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="-79" y="699" as="geometry" />
         </mxCell>
-        <mxCell id="jsTGk4NQo20okIAUbT8I-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;OutPort&lt;/font&gt;" vertex="1">
+        <mxCell id="jsTGk4NQo20okIAUbT8I-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;OutputPort&lt;/font&gt;" vertex="1">
           <mxGeometry height="30" width="60" x="191" y="699" as="geometry" />
         </mxCell>
         <mxCell id="jsTGk4NQo20okIAUbT8I-7" edge="1" parent="1" source="jsTGk4NQo20okIAUbT8I-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="jsTGk4NQo20okIAUbT8I-2">
@@ -64,6 +64,15 @@
         </mxCell>
         <mxCell id="jsTGk4NQo20okIAUbT8I-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Jetmap Mono;" value="FillThisBuffer( )" vertex="1">
           <mxGeometry height="40" width="140" x="-785" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=15;" value="FillThisBuffer会将buffer控制权转到component组件中" vertex="1">
+          <mxGeometry height="50" width="455" x="-665" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="EmptyThisBuffer会把数据buffer交到Component中让Component解析" vertex="1">
+          <mxGeometry height="30" width="395" x="-670" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="疑问：InputPort和Output共用buffer吗？buffer到底怎么流转？到底有哪些buffer？还有零拷贝怎么做到的？" vertex="1">
+          <mxGeometry height="30" width="581" x="-763" y="630" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
