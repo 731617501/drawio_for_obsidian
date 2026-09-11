@@ -1,20 +1,23 @@
 <mxfile host="app.diagrams.net">
   <diagram name="第 1 页" id="cekRBeUw2PlTGE5yeWGd">
-    <mxGraphModel dx="2413" dy="935" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4678" dy="2271" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jsTGk4NQo20okIAUbT8I-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;glass=0;" value="&lt;div align=&quot;left&quot;&gt;Rockchip_OMX_MessageHandlerThread&lt;/div&gt;" vertex="1">
+          <mxGeometry height="589" width="380" x="1710" y="134" as="geometry" />
+        </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-5" edge="1" parent="1" source="otk-fOiWdATp6TJRK-WU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="otk-fOiWdATp6TJRK-WU-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Jetmap Mono;" value="FillThisBuffer( )" vertex="1">
-          <mxGeometry height="50" width="160" x="-20" y="50" as="geometry" />
+          <mxGeometry height="50" width="160" x="2970" y="403.5" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=16;fontFamily=Jetmap Mono;" value="SendCommond( )" vertex="1">
           <mxGeometry height="50" width="160" x="-250" y="110" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Rockchip_OSAL_Queue( &amp;amp;bufferQ, message )" vertex="1">
-          <mxGeometry height="50" width="310" x="-20" y="140" as="geometry" />
+          <mxGeometry height="50" width="310" x="2970" y="482.5" as="geometry" />
         </mxCell>
         <mxCell id="otk-fOiWdATp6TJRK-WU-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" value="Rockchip_OSAL_Queue( &amp;amp;bufferQ, message )" vertex="1">
           <mxGeometry height="50" width="310" x="-250" y="260" as="geometry" />
@@ -73,6 +76,102 @@
         </mxCell>
         <mxCell id="jsTGk4NQo20okIAUbT8I-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="疑问：InputPort和Output共用buffer吗？buffer到底怎么流转？到底有哪些buffer？还有零拷贝怎么做到的？" vertex="1">
           <mxGeometry height="30" width="581" x="-763" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="RkOmx适配" vertex="1">
+          <mxGeometry height="60" width="1070" x="430" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rkvpu_OMX_BufferProcess_Create" vertex="1">
+          <mxGeometry height="30" width="350" x="2120" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fontSize=13;fontStyle=1" value="Rockchip_OMX_ComponentConstructor" vertex="1">
+          <mxGeometry height="485" width="600" x="910" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="UseBuffer" vertex="1">
+          <mxGeometry height="100" width="340" x="430" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;UseBuffer：&amp;nbsp;&lt;/div&gt;&lt;div&gt;是让向OMX绑定buffer，会返回bufferheader，这个bufferheader是双方各有一份可以对应匹配的上的，usr传入对应的bufferheader就可以使用buffer&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="330" x="440" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-48" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="100" width="560" x="920" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-27" parent="jsTGk4NQo20okIAUbT8I-48" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="Rockchip_OMX_BaseComponent_Constructor" vertex="1">
+          <mxGeometry height="100" width="560" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-26" parent="jsTGk4NQo20okIAUbT8I-48" style="rounded=0;whiteSpace=wrap;html=1;" value="Rockchip_OMX_MessageHandlerThread" vertex="1">
+          <mxGeometry height="40" width="360" x="17.5" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-29" parent="jsTGk4NQo20okIAUbT8I-48" style="rounded=1;whiteSpace=wrap;html=1;" value="messageQ" vertex="1">
+          <mxGeometry height="40" width="120" x="390" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-49" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="205" width="560" x="920" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-31" parent="jsTGk4NQo20okIAUbT8I-49" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="Rockchip_OMX_Port_Constructor" vertex="1">
+          <mxGeometry height="205" width="560" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-45" connectable="0" parent="jsTGk4NQo20okIAUbT8I-49" style="group" value="" vertex="1">
+          <mxGeometry height="120" width="245" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-35" parent="jsTGk4NQo20okIAUbT8I-45" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=17;" value="InputPort" vertex="1">
+          <mxGeometry height="120" width="245" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-30" parent="jsTGk4NQo20okIAUbT8I-45" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;bufferQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="37.89473684210526" width="108.88888888888889" x="90.74074074074073" y="56.84210526315789" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-34" parent="jsTGk4NQo20okIAUbT8I-45" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;secure bufferQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="37.89473684210526" width="108.88888888888889" x="90.74074074074073" y="12.631578947368421" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-47" connectable="0" parent="jsTGk4NQo20okIAUbT8I-49" style="group" value="" vertex="1">
+          <mxGeometry height="120" width="220" x="301" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-36" parent="jsTGk4NQo20okIAUbT8I-47" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;fontSize=17;" value="OutputPort" vertex="1">
+          <mxGeometry height="120" width="220" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-37" parent="jsTGk4NQo20okIAUbT8I-47" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;bufferQ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="72" width="101.53846153846153" x="93.07692307692308" y="36" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-52" edge="1" parent="1" source="jsTGk4NQo20okIAUbT8I-26" style="endArrow=classic;html=1;rounded=0;exitX=0.813;exitY=0.036;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.002;entryY=0.079;entryDx=0;entryDy=0;entryPerimeter=0;" target="jsTGk4NQo20okIAUbT8I-53" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="180" />
+            </Array>
+            <mxPoint x="1240" y="230" as="sourcePoint" />
+            <mxPoint x="1570" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Rockchip_OMX_ComponentStateSet" vertex="1">
+          <mxGeometry height="37.89" width="245" x="1800" y="212.11" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="rockchip_BufferProcessCreate" vertex="1">
+          <mxGeometry height="40" width="245" x="2120" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-55" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="wait MessageQ" vertex="1">
+          <mxGeometry height="30" width="160" x="1730" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-58" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="50" width="300" x="2950" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-60" edge="1" parent="1" source="jsTGk4NQo20okIAUbT8I-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="jsTGk4NQo20okIAUbT8I-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-61" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="487.5" width="440" x="2490" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-23" parent="jsTGk4NQo20okIAUbT8I-61" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="Rkvpu_OMX_OutputProcessThread" vertex="1">
+          <mxGeometry height="487.5" width="440" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-20" parent="jsTGk4NQo20okIAUbT8I-61" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" value="Rkvpu_OMX_OutputBufferProcess （while）" vertex="1">
+          <mxGeometry height="352.5" width="380" x="37.5" y="92.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-41" parent="jsTGk4NQo20okIAUbT8I-61" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" value="&lt;div align=&quot;left&quot;&gt;Rkvpu_OutputBufferGetQueue&lt;/div&gt;" vertex="1">
+          <mxGeometry height="71.25" width="330" x="75" y="172.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-57" parent="jsTGk4NQo20okIAUbT8I-61" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;font-family: monospace; white-space: pre;&quot;&gt; Rkvpu_OutputBufferGetQueue&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="285" x="85" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="jsTGk4NQo20okIAUbT8I-59" parent="jsTGk4NQo20okIAUbT8I-61" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="wait BufferQ" vertex="1">
+          <mxGeometry height="30" width="160" x="105" y="202.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
